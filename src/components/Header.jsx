@@ -1,4 +1,6 @@
 import React from "react";
+import { Button, Container } from "react-bootstrap";
+import { FaShoppingCart } from "react-icons/fa";
 import styled from "styled-components";
 
 export default function Header() {
@@ -47,10 +49,39 @@ export default function Header() {
     }
   `;
 
+  const CartButton = styled(Button)`
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: transparent;
+    color: #4361ee;
+    border: 1px solid #4361ee;
+
+    &:hover {
+      background-color: #4361ee;
+      color: white;
+    }
+  `;
+
   const NavButtons = styled.div`
     display: flex;
     gap: 1rem;
   `;
+
+  const PrimaryButton = styled(Button)`
+    background-color: #ff6b6b;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: #ff5252;
+      transform: translateY(-2px);
+    }
+  `;
+
   return (
     <>
       <NavbarWrapper>

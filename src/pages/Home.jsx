@@ -427,69 +427,6 @@ const Copyright = styled.div`
   font-size: 0.9rem;
 `;
 
-const NavbarWrapper = styled.nav`
-  background-color: white;
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
-  padding: 1rem 0;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-`;
-
-const NavContainer = styled(Container)`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-`;
-
-const NavLogo = styled.a`
-  font-size: 1.75rem;
-  font-weight: 700;
-  color: #333;
-  text-decoration: none;
-  
-  &:hover {
-    color: #4361ee;
-  }
-`;
-
-const NavLinks = styled.div`
-  display: flex;
-  gap: 1.5rem;
-  
-  @media (max-width: 768px) {
-    display: none;
-  }
-`;
-
-const NavLink = styled.a`
-  color: #666;
-  text-decoration: none;
-  font-weight: 500;
-  
-  &:hover {
-    color: #4361ee;
-  }
-`;
-
-const NavButtons = styled.div`
-  display: flex;
-  gap: 1rem;
-`;
-
-const CartButton = styled(Button)`
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  background-color: transparent;
-  color: #4361ee;
-  border: 1px solid #4361ee;
-  
-  &:hover {
-    background-color: #4361ee;
-    color: white;
-  }
-`;
 
 // Main Component
 const HomePage = () => {
