@@ -1,24 +1,11 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import * as React from "react";
-import * as ReactDOM from "react-dom/client";
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import Header from './components/Header';
-import "./index.css";
-import Root from './Root';
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import App from './App.jsx';
+import './index.css';
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Root/>,
-  }
-]);
-
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <Header/>
-    <RouterProvider router={router} />
-  </React.StrictMode>
-);
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+)

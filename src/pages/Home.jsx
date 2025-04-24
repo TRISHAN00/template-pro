@@ -531,26 +531,6 @@ const HomePage = () => {
     <>
       <GlobalStyle />
       
-      {/* Navbar */}
-      <NavbarWrapper>
-        <NavContainer>
-          <NavLogo href="#">TemplatePro</NavLogo>
-          <NavLinks>
-            <NavLink href="#templates">Templates</NavLink>
-            <NavLink href="#categories">Categories</NavLink>
-            <NavLink href="#how-it-works">How It Works</NavLink>
-            <NavLink href="#pricing">Pricing</NavLink>
-            <NavLink href="#support">Support</NavLink>
-          </NavLinks>
-          <NavButtons>
-            <CartButton>
-              <FaShoppingCart /> Cart (0)
-            </CartButton>
-            <PrimaryButton>Login</PrimaryButton>
-          </NavButtons>
-        </NavContainer>
-      </NavbarWrapper>
-      
       {/* Hero Section */}
       <HeroSection>
         <Container>
